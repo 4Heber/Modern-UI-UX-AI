@@ -1,12 +1,24 @@
 import React from 'react';
 
 import { Blog, Features, Footer, Header, Possibility, Whatgpt3 } from './containers';
-import { Article, Brand, CTA, Navbar } from './components';
+import { Brand, CTA, Navbar } from './components';
+import './App.css'
 
 const App = () =>{
     return(
-        <div>
-            <h1>OpenAI Landing page</h1>
+        <div className="App">
+            <div className="gradient__bg">
+                <Navbar />
+                <Header />
+            </div>
+
+            <Brand />
+            <Whatgpt3 />
+            <Features />
+            <Possibility />
+            <CTA />
+            <Blog />
+            <Footer />
         </div> 
     )
 }
