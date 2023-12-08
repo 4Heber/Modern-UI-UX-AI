@@ -1,7 +1,8 @@
 import React from 'react';
 import './header.css';
 import people from '../../assets/people.png';
-import ai from '../../assets/ai.png';
+// import ai from '../../assets/ai.png';
+// import sphere from '../../assets/sphere.mp4';
 
 const Header = () =>{
     return(
@@ -30,8 +31,15 @@ const Header = () =>{
             </div>
             {/* AI Image */}
             <div className="gpt3__header-image">
-                <img src={ai} alt="ai" />
+                
             </div>
+
+            {/* Particle sphere video */}
+            {/* <div>
+                <video width={320} height={240} autoPlay loop muted>
+                    <source src={sphere} type="video/mp4" />
+                </video>
+            </div> */}
         </div>
     )
 }
