@@ -42,7 +42,7 @@ const Navbar = () =>{
                     : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />
                 }
 
-                {/* && renderiza el contenido solo si la variable es true */}
+                {/* && renderiza el contenido solo si la variable evaluada es true */}
                 {toggleMenu && (
                     <div className='gpt3__navbar-menu_container scale-up-center'>
                         <div className="gpt3__navbar-menu_container-links">
