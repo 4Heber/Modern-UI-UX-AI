@@ -55,7 +55,6 @@
 }
 .gpt3__whatgpt3-container{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     margin-top: 2rem;
 }

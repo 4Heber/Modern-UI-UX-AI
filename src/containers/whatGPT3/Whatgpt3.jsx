@@ -1,14 +1,15 @@
 import React from 'react';
 import './whatgpt3.css';
-import Features from '../../components/features/Features';
+import Feature from '../../components/feature/Feature';
 
 const Whatgpt3 = () =>{
     return(
-        <div className='gpt3__whatgpt3 section__margin' id="whpt3">
+        <div className='gpt3__whatgpt3 section__margin' id="wgpt3">
             <div className="gpt3__whatgpt3-features">
-                <Features 
+                <Feature 
                     title="What is GPT-3"
                     text="We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by."
+                    row={true}
                 />
             </div>
             <div className="gpt3__whatgpt3-heading">
@@ -16,15 +17,15 @@ const Whatgpt3 = () =>{
                 <p>Explore The Library</p>
             </div>
             <div className="gpt3__whatgpt3-container">
-                <Features 
+                <Feature 
                     title="Chatbots"
                     text="We so opinion friends me message as delight. Whole front do of plate heard oh ought. "
                 />
-                <Features 
+                <Feature 
                     title="Knowledgebase"
                     text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"
                 />
-                <Features 
+                <Feature 
                     title="Education"
                     text="ChatGPT aids education by offering personalized learning, answering queries, and providing instant academic support."
                 />
