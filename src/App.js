@@ -8,9 +8,9 @@ import './App.css'
 const App = () =>{
     return(
         <div className="App">
-            <div style={{ display: "relative", width:"100%", height:"660px", background:"radial-gradient(circle at 3% 25%, rgba(0,0,0,0.8) 1%, transparent)" }}>
-                <div style={{ position:"absolute", height:"660px", zIndex:"-1", top:"0", right:"0" }}>
-                    <video autoPlay loop muted style={{ width:"100%", height:"100%" }}>
+            <div className="gradient__container">
+                <div className='video__container'>
+                    <video autoPlay loop muted className="video">
                         <source src={sphere} type="video/mp4" />
                     </video>
                 </div>

@@ -12,6 +12,23 @@ a{
     color: unset;
     text-decoration: none;
 }
+.gradient__container{
+    display: relative;
+    width: 100%;
+    height: 660px;
+    background: radial-gradient(circle at 3% 25%, rgba(0,0,0,1) 42%, transparent, transparent);
+}
+.video__container{
+    position: absolute;
+    height: 660px;
+    z-index: -1;
+    top: 0;
+    right: 0;
+}
+.video{
+    width: 100%;
+    height: 100%;
+}
 .gradient__bg{
     /* global 92%+ browsers support */
     /* background: radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 1%, rgba(4, 12, 24, 1) 100%); */
@@ -62,6 +79,27 @@ a{
   }
   
 /* scale up animation end */
+
+@media screen and (max-width: 1024px){
+    .gradient__container{
+        display: relative;
+        width: 100%;
+        height: 660px;
+        background: radial-gradient(circle at 3% 25%, rgba(0,0,0,1) 42%, transparent, transparent);
+    }
+    .video__container{
+        position: absolute;
+        height: 660px;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+    }
+    .video{
+        width: 120%;
+        height: 100%;
+    }
+}
 
 @media screen and (max-width: 700px){
     .section__padding{
